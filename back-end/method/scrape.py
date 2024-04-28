@@ -3,17 +3,14 @@ from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 import time
 import googlemaps
-import json
-
 def scrape_url(url):
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--enable-features=SameSiteByDefaultCookies")
     options.add_argument("--log-level=3")
     driver = webdriver.Edge(options=options)
-    url = "https://maps.app.goo.gl/zLPNc4hTaYNBmG3n8"
     driver.get(url)
-    time.sleep(0.1)
+    time.sleep(1)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     sights = soup.find_all('div', {'class': 'm6QErb'})
     seen = set()
@@ -21,15 +18,21 @@ def scrape_url(url):
 
     for sight in sights:
         sight_name = sight.find('div', {'class': 'fontHeadlineSmall rZF81c'})
-        if sight_name is not None:
-            name = sight_name.text
-            if name not in seen:
-                seen.add(name)
-                rating = sight.find('span', {'class': 'UY7F9'}).text
-                # 移除括號和逗號，然後轉換為整數
-                rating = int(rating[1:-1].replace(',', ''))
-                # 將地點名稱和評論數存入字典
-                places[name] = rating
+        if sight_name is None:
+            continue
+        name = sight_name.text
+        if name in seen:
+            continue
+        seen.add(name)
+        rating_element = sight.find('span', {'class': 'UY7F9'})
+        if rating_element is None:
+            rating = None  # 或者你可以設置一個預設值
+        else:
+            rating = rating_element.text
+            # 移除括號和逗號，然後轉換為整數
+            rating = int(rating[1:-1].replace(',', ''))
+        # 將地點名稱和評論數存入字典
+        places[name] = rating
     driver.quit()
     return places
 
@@ -53,9 +56,3 @@ def get_place_info(place_name, expected_rating):
     else:
         return f"{place_name} 沒有找到結果。"
 
-# places = scrape_url("https://maps.app.goo.gl/zLPNc4hTaYNBmG3n8")
-# for place_name, rating in places.items():
-#     result = get_place_info(place_name, rating)
-#     # 將結果轉換為 JSON 字串
-#     json_results = json.dumps(result, ensure_ascii=False, indent=4)
-#     print(json_results)
