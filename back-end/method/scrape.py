@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 import time
 import googlemaps
+
 def scrape_url(url):
     options = Options()
     options.add_argument("--headless")
@@ -12,7 +13,9 @@ def scrape_url(url):
     driver.get(url)
     time.sleep(1)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
-    sights = soup.find_all('div', {'class': 'm6QErb'})
+    sights = soup.find_all('div', class_ = 'm6QErb')
+    # print(sights)
+
     seen = set()
     places = {}
 

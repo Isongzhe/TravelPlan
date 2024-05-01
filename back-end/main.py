@@ -3,8 +3,20 @@ import sys
 sys.path.append('D:\\GitHub\\TravelPlan\\back-end\\')
 from method.scrape import scrape_url, get_place_info
 import time
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # python -m uvicorn main:app --reload :啟動伺服器
 
 # http://localhost:8000/api/scrape?url=https://maps.app.goo.gl/zLPNc4hTaYNBmG3n8
