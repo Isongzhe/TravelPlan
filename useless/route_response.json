@@ -1,0 +1,1309 @@
+{
+    "items": [
+        {
+            "summary": {
+                "no": "1",
+                "start": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                "goal": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                },
+                "move": {
+                    "transit_count": 0,
+                    "walk_distance": 647,
+                    "fare": {
+                        "unit_0": 180.0,
+                        "unit_48": 178.0,
+                        "unit_128_train": 6800.0,
+                        "unit_130_train": 19380.0,
+                        "unit_133_train": 36720.0
+                    },
+                    "type": "move",
+                    "from_time": "2024-06-23T10:46:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 14,
+                    "distance": 1747,
+                    "move_type": [
+                        "local_train",
+                        "walk"
+                    ]
+                }
+            },
+            "sections": [
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:46:00+09:00",
+                    "to_time": "2024-06-23T10:52:00+09:00",
+                    "time": 6,
+                    "distance": 322,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702814,
+                        "lon": 139.771515
+                    },
+                    "name": "末広町（東京都）",
+                    "node_id": "00008527",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "3番口",
+                    "numbering": {
+                        "departure": [
+                            {
+                                "symbol": "G",
+                                "number": "14"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "transport": {
+                        "fare": {
+                            "unit_0": 180.0,
+                            "unit_48": 178.0,
+                            "unit_128": 6800.0,
+                            "unit_130": 19380.0,
+                            "unit_133": 36720.0,
+                            "unit_136": 3090.0,
+                            "unit_138": 8810.0,
+                            "unit_141": 16690.0
+                        },
+                        "getoff": "4",
+                        "color": "#FF9500",
+                        "name": "東京メトロ銀座線",
+                        "fare_season": "normal",
+                        "company": {
+                            "id": "00000113",
+                            "name": "東京地下鉄（メトロ）"
+                        },
+                        "links": [
+                            {
+                                "id": "00000768",
+                                "name": "東京メトロ銀座線",
+                                "direction": "up",
+                                "destination": {
+                                    "id": "00005270",
+                                    "name": "浅草"
+                                },
+                                "from": {
+                                    "id": "00008527",
+                                    "name": "末広町（東京都）"
+                                },
+                                "to": {
+                                    "id": "00004067",
+                                    "name": "上野"
+                                },
+                                "is_timetable": "false"
+                            }
+                        ],
+                        "id": "00000559",
+                        "type": "普通",
+                        "fare_break": {
+                            "unit_0": true,
+                            "unit_48": true,
+                            "unit_128": true,
+                            "unit_130": true,
+                            "unit_133": true,
+                            "unit_136": true,
+                            "unit_138": true,
+                            "unit_141": true
+                        },
+                        "fare_detail": [
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "0",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 180.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "48",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 178.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "128",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 6800.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "130",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 19380.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "133",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 36720.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "136",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 3090.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "138",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 8810.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "141",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 16690.0
+                            }
+                        ]
+                    },
+                    "move": "local_train",
+                    "from_time": "2024-06-23T10:53:00+09:00",
+                    "to_time": "2024-06-23T10:56:00+09:00",
+                    "time": 3,
+                    "distance": 1100,
+                    "line_name": "東京メトロ銀座線"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711387,
+                        "lon": 139.775828
+                    },
+                    "name": "上野",
+                    "node_id": "00004067",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "5b口",
+                    "numbering": {
+                        "arrival": [
+                            {
+                                "symbol": "G",
+                                "number": "16"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:56:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 4,
+                    "distance": 325,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                }
+            ]
+        },
+        {
+            "summary": {
+                "no": "2",
+                "start": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                "goal": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                },
+                "move": {
+                    "transit_count": 0,
+                    "walk_distance": 754,
+                    "fare": {
+                        "unit_0": 180.0,
+                        "unit_48": 178.0,
+                        "unit_128_train": 6630.0,
+                        "unit_130_train": 18900.0,
+                        "unit_133_train": 35810.0
+                    },
+                    "type": "move",
+                    "from_time": "2024-06-23T10:45:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 15,
+                    "distance": 1354,
+                    "move_type": [
+                        "local_train",
+                        "walk"
+                    ]
+                }
+            },
+            "sections": [
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:45:00+09:00",
+                    "to_time": "2024-06-23T10:51:00+09:00",
+                    "time": 6,
+                    "distance": 322,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702814,
+                        "lon": 139.771515
+                    },
+                    "name": "末広町（東京都）",
+                    "node_id": "00008527",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "3番口",
+                    "numbering": {
+                        "departure": [
+                            {
+                                "symbol": "G",
+                                "number": "14"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "transport": {
+                        "fare": {
+                            "unit_0": 180.0,
+                            "unit_48": 178.0,
+                            "unit_128": 6630.0,
+                            "unit_130": 18900.0,
+                            "unit_133": 35810.0,
+                            "unit_136": 2870.0,
+                            "unit_138": 8180.0,
+                            "unit_141": 15500.0
+                        },
+                        "getoff": "2",
+                        "color": "#FF9500",
+                        "name": "東京メトロ銀座線",
+                        "fare_season": "normal",
+                        "company": {
+                            "id": "00000113",
+                            "name": "東京地下鉄（メトロ）"
+                        },
+                        "links": [
+                            {
+                                "id": "00000768",
+                                "name": "東京メトロ銀座線",
+                                "direction": "up",
+                                "destination": {
+                                    "id": "00005270",
+                                    "name": "浅草"
+                                },
+                                "from": {
+                                    "id": "00008527",
+                                    "name": "末広町（東京都）"
+                                },
+                                "to": {
+                                    "id": "00004070",
+                                    "name": "上野広小路"
+                                },
+                                "is_timetable": "false"
+                            }
+                        ],
+                        "id": "00000559",
+                        "type": "普通",
+                        "fare_break": {
+                            "unit_0": true,
+                            "unit_48": true,
+                            "unit_128": true,
+                            "unit_130": true,
+                            "unit_133": true,
+                            "unit_136": true,
+                            "unit_138": true,
+                            "unit_141": true
+                        },
+                        "fare_detail": [
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "0",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 180.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "48",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 178.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "128",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 6630.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "130",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 18900.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "133",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 35810.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "136",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 2870.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "138",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 8180.0
+                            },
+                            {
+                                "start": {
+                                    "name": "末広町（東京都）",
+                                    "node_id": "00008527"
+                                },
+                                "id": "141",
+                                "goal": {
+                                    "name": "上野広小路",
+                                    "node_id": "00004070"
+                                },
+                                "fare": 15500.0
+                            }
+                        ]
+                    },
+                    "move": "local_train",
+                    "from_time": "2024-06-23T10:52:00+09:00",
+                    "to_time": "2024-06-23T10:53:00+09:00",
+                    "time": 1,
+                    "distance": 600,
+                    "line_name": "東京メトロ銀座線"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.708343,
+                        "lon": 139.772973
+                    },
+                    "name": "上野広小路",
+                    "node_id": "00004070",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "A3口",
+                    "numbering": {
+                        "arrival": [
+                            {
+                                "symbol": "G",
+                                "number": "15"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:53:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 7,
+                    "distance": 432,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                }
+            ]
+        },
+        {
+            "summary": {
+                "no": "3",
+                "start": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                "goal": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                },
+                "move": {
+                    "transit_count": 0,
+                    "walk_distance": 1156,
+                    "type": "move",
+                    "from_time": "2024-06-23T10:43:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 17,
+                    "distance": 1156,
+                    "move_type": [
+                        "walk"
+                    ]
+                }
+            },
+            "sections": [
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:43:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 17,
+                    "distance": 1156,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                }
+            ]
+        },
+        {
+            "summary": {
+                "no": "4",
+                "start": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                "goal": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                },
+                "move": {
+                    "transit_count": 0,
+                    "walk_distance": 1108,
+                    "fare": {
+                        "unit_0": 180.0,
+                        "unit_48": 178.0,
+                        "unit_128_train": 6630.0,
+                        "unit_130_train": 18900.0,
+                        "unit_133_train": 35810.0
+                    },
+                    "type": "move",
+                    "from_time": "2024-06-23T10:41:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 19,
+                    "distance": 1608,
+                    "move_type": [
+                        "local_train",
+                        "walk"
+                    ]
+                }
+            },
+            "sections": [
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:41:00+09:00",
+                    "to_time": "2024-06-23T10:49:00+09:00",
+                    "time": 8,
+                    "distance": 620,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.705698,
+                        "lon": 139.775903
+                    },
+                    "name": "仲御徒町",
+                    "node_id": "00006149",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "2番口",
+                    "numbering": {
+                        "departure": [
+                            {
+                                "symbol": "H",
+                                "number": "17"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "transport": {
+                        "fare": {
+                            "unit_0": 180.0,
+                            "unit_48": 178.0,
+                            "unit_128": 6630.0,
+                            "unit_130": 18900.0,
+                            "unit_133": 35810.0,
+                            "unit_136": 2870.0,
+                            "unit_138": 8180.0,
+                            "unit_141": 15500.0
+                        },
+                        "getoff": "後",
+                        "color": "#B5B5AC",
+                        "name": "東京メトロ日比谷線",
+                        "fare_season": "normal",
+                        "company": {
+                            "id": "00000113",
+                            "name": "東京地下鉄（メトロ）"
+                        },
+                        "links": [
+                            {
+                                "id": "00000773",
+                                "name": "東京メトロ日比谷線",
+                                "direction": "up",
+                                "destination": {
+                                    "id": "00008355",
+                                    "name": "北千住"
+                                },
+                                "from": {
+                                    "id": "00006149",
+                                    "name": "仲御徒町"
+                                },
+                                "to": {
+                                    "id": "00004067",
+                                    "name": "上野"
+                                },
+                                "is_timetable": "false"
+                            }
+                        ],
+                        "id": "00000562",
+                        "type": "普通",
+                        "fare_break": {
+                            "unit_0": true,
+                            "unit_48": true,
+                            "unit_128": true,
+                            "unit_130": true,
+                            "unit_133": true,
+                            "unit_136": true,
+                            "unit_138": true,
+                            "unit_141": true
+                        },
+                        "fare_detail": [
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "0",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 180.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "48",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 178.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "128",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 6630.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "130",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 18900.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "133",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 35810.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "136",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 2870.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "138",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 8180.0
+                            },
+                            {
+                                "start": {
+                                    "name": "仲御徒町",
+                                    "node_id": "00006149"
+                                },
+                                "id": "141",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 15500.0
+                            }
+                        ]
+                    },
+                    "move": "local_train",
+                    "from_time": "2024-06-23T10:51:00+09:00",
+                    "to_time": "2024-06-23T10:53:00+09:00",
+                    "time": 2,
+                    "distance": 500,
+                    "line_name": "東京メトロ日比谷線"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.710839,
+                        "lon": 139.776843
+                    },
+                    "name": "上野",
+                    "node_id": "00004067",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "3番口",
+                    "numbering": {
+                        "arrival": [
+                            {
+                                "symbol": "H",
+                                "number": "18"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:53:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 7,
+                    "distance": 488,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                }
+            ]
+        },
+        {
+            "summary": {
+                "no": "5",
+                "start": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                "goal": {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                },
+                "move": {
+                    "transit_count": 0,
+                    "walk_distance": 1071,
+                    "fare": {
+                        "unit_0": 150.0,
+                        "unit_48": 146.0,
+                        "unit_128_train": 4280.0,
+                        "unit_130_train": 12210.0,
+                        "unit_133_train": 20660.0
+                    },
+                    "type": "move",
+                    "from_time": "2024-06-23T10:40:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 20,
+                    "distance": 2671,
+                    "move_type": [
+                        "local_train",
+                        "walk"
+                    ]
+                }
+            },
+            "sections": [
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.702207,
+                        "lon": 139.774145
+                    },
+                    "name": "start"
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:40:00+09:00",
+                    "to_time": "2024-06-23T10:49:00+09:00",
+                    "time": 9,
+                    "distance": 568,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.698264,
+                        "lon": 139.7739
+                    },
+                    "name": "秋葉原",
+                    "node_id": "00003494",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "中央改札口",
+                    "numbering": {
+                        "departure": [
+                            {
+                                "symbol": "JK",
+                                "number": "28"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "transport": {
+                        "fare": {
+                            "unit_0": 150.0,
+                            "unit_48": 146.0,
+                            "unit_128": 4280.0,
+                            "unit_130": 12210.0,
+                            "unit_133": 20660.0,
+                            "unit_136": 2300.0,
+                            "unit_138": 6570.0,
+                            "unit_141": 12450.0,
+                            "unit_144": 2070.0,
+                            "unit_146": 5910.0,
+                            "unit_149": 11200.0,
+                            "unit_152": 1610.0,
+                            "unit_154": 4590.0,
+                            "unit_157": 8710.0,
+                            "unit_160": 3830.0,
+                            "unit_162": 10930.0,
+                            "unit_165": 18500.0
+                        },
+                        "getoff": "中・後",
+                        "color": "#00B2E5",
+                        "name": "ＪＲ京浜東北線・根岸線快速",
+                        "fare_season": "normal",
+                        "company": {
+                            "id": "00000004",
+                            "name": "ＪＲ東日本"
+                        },
+                        "links": [
+                            {
+                                "id": "00000131",
+                                "name": "ＪＲ京浜東北線",
+                                "direction": "up",
+                                "destination": {
+                                    "id": "00004067",
+                                    "name": "上野"
+                                },
+                                "from": {
+                                    "id": "00003494",
+                                    "name": "秋葉原"
+                                },
+                                "to": {
+                                    "id": "00004067",
+                                    "name": "上野"
+                                },
+                                "is_timetable": "false"
+                            }
+                        ],
+                        "id": "00000334",
+                        "type": "普通",
+                        "fare_break": {
+                            "unit_0": true,
+                            "unit_48": true,
+                            "unit_128": true,
+                            "unit_130": true,
+                            "unit_133": true,
+                            "unit_136": true,
+                            "unit_138": true,
+                            "unit_141": true,
+                            "unit_144": true,
+                            "unit_146": true,
+                            "unit_149": true,
+                            "unit_152": true,
+                            "unit_154": true,
+                            "unit_157": true,
+                            "unit_160": true,
+                            "unit_162": true,
+                            "unit_165": true
+                        },
+                        "fare_detail": [
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "0",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 150.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "48",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 146.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "128",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 4280.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "130",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 12210.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "133",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 20660.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "136",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 2300.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "138",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 6570.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "141",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 12450.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "144",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 2070.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "146",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 5910.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "149",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 11200.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "152",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 1610.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "154",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 4590.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "157",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 8710.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "160",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 3830.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "162",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 10930.0
+                            },
+                            {
+                                "start": {
+                                    "name": "秋葉原",
+                                    "node_id": "00003494"
+                                },
+                                "id": "165",
+                                "goal": {
+                                    "name": "上野",
+                                    "node_id": "00004067"
+                                },
+                                "fare": 18500.0
+                            }
+                        ]
+                    },
+                    "move": "local_train",
+                    "from_time": "2024-06-23T10:52:00+09:00",
+                    "to_time": "2024-06-23T10:54:00+09:00",
+                    "time": 2,
+                    "distance": 1600,
+                    "line_name": "ＪＲ京浜東北線・根岸線快速"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711747,
+                        "lon": 139.774968
+                    },
+                    "name": "上野",
+                    "node_id": "00004067",
+                    "node_types": [
+                        "station"
+                    ],
+                    "gateway": "不忍口",
+                    "numbering": {
+                        "arrival": [
+                            {
+                                "symbol": "JK",
+                                "number": "30"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "move",
+                    "move": "walk",
+                    "from_time": "2024-06-23T10:54:00+09:00",
+                    "to_time": "2024-06-23T11:00:00+09:00",
+                    "time": 6,
+                    "distance": 503,
+                    "line_name": "徒歩"
+                },
+                {
+                    "type": "point",
+                    "coord": {
+                        "lat": 35.711208,
+                        "lon": 139.773542
+                    },
+                    "name": "goal"
+                }
+            ]
+        }
+    ],
+    "unit": {
+        "datum": "wgs84",
+        "coord_unit": "degree",
+        "distance": "metre",
+        "time": "minute",
+        "currency": "JPY"
+    }
+}

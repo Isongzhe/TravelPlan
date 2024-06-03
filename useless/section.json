@@ -1,0 +1,237 @@
+"sections": [
+    {
+        "type": "point",
+        "coord": {
+            "lat": 35.702207,
+            "lon": 139.774145
+        },
+        "name": "start"
+    },
+    {
+        "type": "move",
+        "move": "walk",
+        "from_time": "2024-06-23T10:46:00+09:00",
+        "to_time": "2024-06-23T10:52:00+09:00",
+        "time": 6,
+        "distance": 322,
+        "line_name": "徒歩"
+    },
+    {
+        "type": "point",
+        "coord": {
+            "lat": 35.702814,
+            "lon": 139.771515
+        },
+        "name": "末広町（東京都）",
+        "node_id": "00008527",
+        "node_types": [
+            "station"
+        ],
+        "gateway": "3番口",
+        "numbering": {
+            "departure": [
+                {
+                    "symbol": "G",
+                    "number": "14"
+                }
+            ]
+        }
+    },
+    {
+        "type": "move",
+        "transport": {
+            "fare": {
+                "unit_0": 180.0,
+                "unit_48": 178.0,
+                "unit_128": 6800.0,
+                "unit_130": 19380.0,
+                "unit_133": 36720.0,
+                "unit_136": 3090.0,
+                "unit_138": 8810.0,
+                "unit_141": 16690.0
+            },
+            "getoff": "4",
+            "color": "#FF9500",
+            "name": "東京メトロ銀座線",
+            "fare_season": "normal",
+            "company": {
+                "id": "00000113",
+                "name": "東京地下鉄（メトロ）"
+            },
+            "links": [
+                {
+                    "id": "00000768",
+                    "name": "東京メトロ銀座線",
+                    "direction": "up",
+                    "destination": {
+                        "id": "00005270",
+                        "name": "浅草"
+                    },
+                    "from": {
+                        "id": "00008527",
+                        "name": "末広町（東京都）"
+                    },
+                    "to": {
+                        "id": "00004067",
+                        "name": "上野"
+                    },
+                    "is_timetable": "false"
+                }
+            ],
+            "id": "00000559",
+            "type": "普通",
+            "fare_break": {
+                "unit_0": true,
+                "unit_48": true,
+                "unit_128": true,
+                "unit_130": true,
+                "unit_133": true,
+                "unit_136": true,
+                "unit_138": true,
+                "unit_141": true
+            },
+            "fare_detail": [
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "0",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 180.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "48",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 178.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "128",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 6800.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "130",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 19380.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "133",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 36720.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "136",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 3090.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "138",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 8810.0
+                },
+                {
+                    "start": {
+                        "name": "末広町（東京都）",
+                        "node_id": "00008527"
+                    },
+                    "id": "141",
+                    "goal": {
+                        "name": "上野",
+                        "node_id": "00004067"
+                    },
+                    "fare": 16690.0
+                }
+            ]
+        },
+        "move": "local_train",
+        "from_time": "2024-06-23T10:53:00+09:00",
+        "to_time": "2024-06-23T10:56:00+09:00",
+        "time": 3,
+        "distance": 1100,
+        "line_name": "東京メトロ銀座線"
+    },
+    {
+        "type": "point",
+        "coord": {
+            "lat": 35.711387,
+            "lon": 139.775828
+        },
+        "name": "上野",
+        "node_id": "00004067",
+        "node_types": [
+            "station"
+        ],
+        "gateway": "5b口",
+        "numbering": {
+            "arrival": [
+                {
+                    "symbol": "G",
+                    "number": "16"
+                }
+            ]
+        }
+    },
+    {
+        "type": "move",
+        "move": "walk",
+        "from_time": "2024-06-23T10:56:00+09:00",
+        "to_time": "2024-06-23T11:00:00+09:00",
+        "time": 4,
+        "distance": 325,
+        "line_name": "徒歩"
+    },
+    {
+        "type": "point",
+        "coord": {
+            "lat": 35.711208,
+            "lon": 139.773542
+        },
+        "name": "goal"
+    }
+]

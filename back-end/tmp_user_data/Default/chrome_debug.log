@@ -1,0 +1,9 @@
+[0604/000152.617:ERROR:cache_util_win.cc(20)] Unable to move the cache: 存取被拒。 (0x5)
+[0604/000152.617:ERROR:cache_util_win.cc(20)] Unable to move the cache: 存取被拒。 (0x5)
+[0604/000152.617:ERROR:cache_util_win.cc(20)] Unable to move the cache: 存取被拒。 (0x5)
+[0604/000152.619:ERROR:disk_cache.cc(208)] Unable to create cache
+[0604/000152.619:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0604/000152.619:ERROR:disk_cache.cc(208)] Unable to create cache
+[0604/000152.619:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0604/000152.619:ERROR:disk_cache.cc(208)] Unable to create cache
+[0604/000152.619:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
