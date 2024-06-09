@@ -54,11 +54,12 @@ async def _search_google_place(text: str) -> Dict:
 
             # 從回應中提取地點資料
             place_data = {
-                "place_id": place.get("place_id"),
-                "name": place.get("name"),
-                "geometry": place.get("geometry")["location"],
-                "user_ratings_total": place.get("user_ratings_total"),
-                "types": place.get("types"),
+                "place_id": place.get("place_id"),  # 取得地點 ID
+                "name": place.get("name"),  # 取得地點名稱
+                "geometry": place.get("geometry")["location"],  # 取得地點的經緯度
+                "formattedAddress": place.get("formatted_address"),  # 取得格式化地址
+                # "user_ratings_total": place.get("user_ratings_total"), # 取得評分總數
+                "types": place.get("types"),  # 取得地點類型
             }
 
             return place_data  # 返回整理好的地點資料
