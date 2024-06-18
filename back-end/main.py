@@ -1,6 +1,7 @@
 import asyncio
 from fastapi import FastAPI, Request, HTTPException, Query
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware  # 引入CORS中間件
 
 # 引入 scrapy_list.py 中的函式，並使用別名
 from scrapy_list import (
@@ -13,6 +14,19 @@ from googlemaps.places import places
 
 # 創建 FastAPI 應用
 app = FastAPI()
+
+# 添加 CORS 中間件
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允許所有源進行跨域請求
+    allow_credentials=True,
+    allow_methods=["*"],  # 允許所有方法 (GET, POST, 等等)
+    allow_headers=["*"],  # 允許所有頭
+)
+
+GOOGLE_API_KEY = "AIzaSyBr0uayIFWpufzzq-hxl2p8-B4nYLxTSN0"  # 請替換成你的 API 金鑰
+# 創建 Google Maps 客戶端
+gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 
 
 # 創建 api/crawl_google_map 路由，使用 GET 方法，接收 URL 參數，並返回爬取結果
@@ -30,11 +44,6 @@ async def crawl_google_map(
         # 詳細記錄錯誤訊息
         print(f"爬取 Google Map 發生錯誤: {e}")
         raise HTTPException(status_code=500, detail=f"爬取 Google Map 發生錯誤: {e}")
-
-
-GOOGLE_API_KEY = "AIzaSyBr0uayIFWpufzzq-hxl2p8-B4nYLxTSN0"  # 請替換成你的 API 金鑰
-# 創建 Google Maps 客戶端
-gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 
 
 # 定義異步任務，用於搜索每個單一地點
@@ -105,7 +114,26 @@ async def search_google_places(request: Request):
 
 
 if __name__ == "__main__":
-    import uvicorn
-
+    # import uvicorn
     # 運行 uvicorn 伺服器，監聽所有網路介面 (0.0.0.0) 的 8000 埠，並啟用自動重新載入
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    # uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
+    import subprocess
+    import sys
+
+    # 使用 subprocess 模組運行 `python -m uvicorn main:app --reload`
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "uvicorn",
+            "main:app",
+            "--reload",
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "8000",
+        ]
+    )
+
+    #  python -m uvicorn main:app --reload    # 啟動FastAPI應用
